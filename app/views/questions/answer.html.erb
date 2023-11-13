@@ -1,0 +1,23 @@
+<div class="container mt-5">
+  <h1>Stupid Coaching</h1>
+
+  <!-- Card for the User's Question -->
+  <div class="card mt-4" bg-light>
+    <div class="card-body">
+      <h5 class="card-title">Your Question</h5>
+      <p class="card-text"><%= @question %></p>
+      <p class="text-muted"><i>"-You"</i></p>
+    </div>
+  </div>
+
+  <!-- Card for the Coach's Answer -->
+  <div class="card mt-4" bg-light>
+    <div class="card-body">
+      <h5 class="card-title">Coach's Answer</h5>
+      <p class="card-text"><%= @answer %></p>
+      <p class="text-muted"><i>"-Your coach"</i></p>
+    </div>
+  </div>
+
+  <%= link_to 'Ask a new question', ask_path, class: "btn btn-outline-primary mt-3" %>
+</div>
